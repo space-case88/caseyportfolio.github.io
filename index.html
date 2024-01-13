@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/9ec96dfc18.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="Images/casey-oneal-main-logo-125x125px.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href='#header'>Home</a></li>
+                        <li><a href='#about'>About</a></li>
+                        <li><a href='#services'>Skills</a></li>
+                        <li><a href='#portfolio'>Portfolio</a></li>
+                        <li><a href='#contact'>Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Programmer / Game Developer</p>
+                    <h1>Casey <span>O'Neal</span><br>Portland, Oregon</h1>
+                </div>
+            </div>
+        </div>
+
+<!--------THIS IS THE ABOUT SECTION-------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/profilephoto1.JPG" width="400" height="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title"></h1>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Unity and Unreal</span><br>Designing Websites and Video Games</li>
+                                <li><span>HTML/CSS/JavaScript</span><br>Web Design and Functionality</li>
+                                <li><span>Mechanical Keyboards</span><br>Mechanical Keyboard aesthetics and programming</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>This is a test</span><br>Designing Websites and Video Games</li>
+                                <li><span>HTML/CSS/JavaScript</span><br>Web Design and Functionality</li>
+                                <li><span>Mechanical Keyboards</span><br>Mechanical Keyboard aesthetics and programming</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Unity and Unreal</span><br>Designing Websites and Video Games</li>
+                                <li><span>This is a test</span><br>Web Design and Functionality</li>
+                                <li><span>Mechanical Keyboards</span><br>Mechanical Keyboard builds</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-------------------This is the skills section---------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web/Software Development</h2>
+                <p>I am an accomplished web developer with a talent for aesthetics and design. My goal is to create websites that are easy to use and pleasing to the eye. I can guarantee that I would be a great choice for you web needs.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Game Development</h2>
+                <p>I use Unity 2D & 3D as well as Unreal Engine to develop cohesive and functional games.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-keyboard"></i>
+                <h2>Custom Keyboard Builds</h2>
+                <p>As a long time custom keyboard enthusiast, I know how to make your experience feel as premium as possible with whatever build or layout you want.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------Portfolio Section------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Gifs/SpaceInvadersClip.gif">
+                <div class="layer">
+                    <h3>Space Invaders</h3>
+                    <p>I made this Space Invaders like game in Unity 2d. As you can see, this game features custom animations made by myself as well as win and lose conditions. This is also showcasing the enemy behavior and pathing. All code was done in C#.</p>
+                    <a href="https://github.com/space-case88/SpaceInvader"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Gifs/TicTacToe.gif">
+                <div class="layer">
+                    <h3>Tic Tac Toe</h3>
+                    <p>This is the classic Tic Tac Toe! I made this using HTML, CSS and JavaScript. It is feature complete using sound effects and some animation.</p>
+                    <a href="https://github.com/space-case88/TicTacToe"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Gifs/Calendar.gif">
+                <div class="layer">
+                    <h3>Calendar Web Application</h3>
+                    <p>I made this Calendar for myself and continue to work on it adding new features whenever I get a chance. You can see here than it keeps the date accurately and you can also add or subtract events on specific days.</p>
+                    <a href="https://github.com/space-case88/Calendar"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Gifs/Calculator.gif">
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>I made this calculator using HTML, CSS and JavaScript. I especially like the color fade on the buttons.</p>
+                    <a href="https://github.com/space-case88/Javascript-Projects/tree/main/Calculator-JS-project"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://github.com/space-case88?tab=repositories" class="btn">All Repositories</a>
+
+    </div>
+</div>
+
+<!-----------------CONTACT FORM SECTION------------------>
+<div id="contact">
+    <div class="container">
+        <div id="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> caseyd.oneal@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> (505) 306-7029</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/casey-o-neal-66515326b/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/space-case88"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <a href="Images/CaseyO'NealResume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <textarea name="Message" rows="6" placeholder="Leave a Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>This portfolio was made by Casey O'Neal. Thanks for taking a look! <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+
+        <Script>
+            
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+        </Script>
+
+    </body>
+</html>
